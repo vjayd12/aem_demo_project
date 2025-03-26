@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="src" path="/aemtutorial.core"/>
+  <classpathentry kind="var" path="M2_REPO/com/adobe/aem/aem-sdk-api/2025.3.19823.20250304T101418Z-250200/aem-sdk-api-2025.3.19823.20250304T101418Z-250200.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/osgi/osgi.core/8.0.0/osgi.core-8.0.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.annotation.versioning/1.1.2/org.osgi.annotation.versioning-1.1.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.annotation.bundle/1.1.1/org.osgi.annotation.bundle-1.1.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.metatype.annotations/1.4.1/org.osgi.service.metatype.annotations-1.4.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/osgi/osgi.annotation/8.0.1/osgi.annotation-8.0.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.namespace.extender/1.0.1/org.osgi.namespace.extender-1.0.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.namespace.implementation/1.0.0/org.osgi.namespace.implementation-1.0.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.component.annotations/1.5.0/org.osgi.service.component.annotations-1.5.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.util.function/1.0.0/org.osgi.util.function-1.0.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.util.promise/1.0.0/org.osgi.util.promise-1.0.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.http.whiteboard/1.1.1/org.osgi.service.http.whiteboard-1.1.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.servlets.annotations/1.2.6/org.apache.sling.servlets.annotations-1.2.6.jar"/>
+</classpath>

@@ -1,0 +1,152 @@
+{
+  "id":"com.aemtutorial:aemtutorial.all:slingosgifeature:user-aggregated-author:1.0.0-SNAPSHOT",
+  "bundles":[
+    {
+      "id":"com.aemtutorial:aemtutorial.core:1.0.0-SNAPSHOT",
+      "feature-origins":"com.aemtutorial:aemtutorial.all:slingosgifeature:1.0.0-SNAPSHOT",
+      "Bundle-SymbolicName":"aemtutorial.core",
+      "Bundle-Version":"1.0.0.SNAPSHOT",
+      "start-order":"20",
+      "content-package-origins":"com.aemtutorial:aemtutorial.all:1.0.0-SNAPSHOT"
+    }
+  ],
+  "configurations":  {
+    "com.adobe.granite.cors.impl.CORSPolicyImpl~aemtutorial":    {
+      ":configurator:content-package-origins":"com.aemtutorial:aemtutorial.all:1.0.0-SNAPSHOT|com.aemtutorial:aemtutorial.ui.config:1.0.0-SNAPSHOT",
+      "alloworigin":[
+        "http://localhost:3000"
+      ],
+      "allowedpaths":[
+        "/(content|conf)/aemtutorial.*"
+      ],
+      "supportedheaders":[
+        "Authorization",
+        "Origin",
+        "Accept",
+        "X-Requested-With",
+        "Content-Type",
+        "Access-Control-Request-Method",
+        "Access-Control-Request-Headers"
+      ],
+      "supportedmethods":[
+        "GET",
+        "HEAD"
+      ],
+      "alloworiginregexp":[
+      ],
+      ":configurator:feature-origins-supportedmethods":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:author:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins-alloworigin":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:author:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins-alloworiginregexp":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:author:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins-supportedheaders":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:author:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins-allowedpaths":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:author:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:author:1.0.0-SNAPSHOT"
+      ]
+    },
+    "com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider~aemtutorial":    {
+      ":configurator:content-package-origins":"com.aemtutorial:aemtutorial.all:1.0.0-SNAPSHOT|com.aemtutorial:aemtutorial.ui.config:1.0.0-SNAPSHOT",
+      "mobile.resourceTypes":[
+        "aemtutorial/components/page"
+      ],
+      "README":"Indicate which page resource types should display the mobile emulators.",
+      ":configurator:feature-origins-mobile.resourceTypes":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:author:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins-README":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:author:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:author:1.0.0-SNAPSHOT"
+      ]
+    },
+    "com.adobe.cq.wcm.core.components.internal.servlets.TableOfContentsFilter~aemtutorial":    {
+      ":configurator:content-package-origins":"com.aemtutorial:aemtutorial.all:1.0.0-SNAPSHOT|com.aemtutorial:aemtutorial.ui.config:1.0.0-SNAPSHOT",
+      "enabled":"true",
+      ":configurator:feature-origins-enabled":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ]
+    },
+    "org.apache.sling.commons.log.LogManager.factory.config~aemtutorial":    {
+      ":configurator:content-package-origins":"com.aemtutorial:aemtutorial.all:1.0.0-SNAPSHOT|com.aemtutorial:aemtutorial.ui.config:1.0.0-SNAPSHOT",
+      "org.apache.sling.commons.log.names":[
+        "com.aemtutorial"
+      ],
+      "org.apache.sling.commons.log.level":"INFO",
+      "org.apache.sling.commons.log.file":"logs/error.log",
+      "org.apache.sling.commons.log.additiv":"false",
+      ":configurator:feature-origins-org.apache.sling.commons.log.names":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins-org.apache.sling.commons.log.file":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins-org.apache.sling.commons.log.level":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins-org.apache.sling.commons.log.additiv":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ]
+    }
+  },
+  "assembled-features:ARTIFACTS|TRANSIENT":[
+    "com.aemtutorial:aemtutorial.all:slingosgifeature:author:1.0.0-SNAPSHOT",
+    "com.aemtutorial:aemtutorial.all:slingosgifeature:1.0.0-SNAPSHOT"
+  ],
+  "repoinit:TEXT|true":[
+    "# origin=com.aemtutorial:aemtutorial.all:1.0.0-SNAPSHOT|com.aemtutorial:aemtutorial.ui.config:1.0.0-SNAPSHOT source=org.apache.sling.jcr.repoinit.RepositoryInitializer~aemtutorial",
+    "create path (sling:OrderedFolder) /content/dam/aemtutorial",
+    "create path (nt:unstructured) /content/dam/aemtutorial/jcr:content",
+    "set properties on /content/dam/aemtutorial/jcr:content",
+    "  set cq:conf{String} to /conf/aemtutorial",
+    "  set jcr:title{String} to \"AEM Tutorial\"",
+    "end"
+  ],
+  "content-packages:ARTIFACTS|true":[
+    {
+      "id":"com.aemtutorial:aemtutorial.ui.config:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+      "feature-origins":"com.aemtutorial:aemtutorial.all:slingosgifeature:1.0.0-SNAPSHOT"
+    },
+    {
+      "id":"com.aemtutorial:aemtutorial.ui.apps:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+      "feature-origins":"com.aemtutorial:aemtutorial.all:slingosgifeature:1.0.0-SNAPSHOT"
+    },
+    {
+      "id":"com.aemtutorial:aemtutorial.all:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+      "feature-origins":"com.aemtutorial:aemtutorial.all:slingosgifeature:1.0.0-SNAPSHOT"
+    }
+  ],
+  "api-regions:JSON|false":[
+    {
+      "name":"global",
+      "exports":[
+        "com.aemtutorial.core.filters",
+        "com.aemtutorial.core.listeners",
+        "com.aemtutorial.core.models",
+        "com.aemtutorial.core.schedulers",
+        "com.aemtutorial.core.servlets"
+      ],
+      "feature-origins":[
+        "com.aemtutorial:aemtutorial.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ]
+    }
+  ],
+  "artifact-rules:JSON|false":{
+
+  }
+}

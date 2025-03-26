@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.3.6
+Build-Jdk-Spec: 11
+Implementation-Title: AEM Tutorial - All
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: container
+Content-Package-Id: com.aemtutorial:aemtutorial.all:1.0.0-SNAPSHOT
+Content-Package-Description: All content package for AEM Tutorial
+Content-Package-Roots: /apps/aemtutorial-packages,/apps/aemtutorial-vend
+ or-packages
+

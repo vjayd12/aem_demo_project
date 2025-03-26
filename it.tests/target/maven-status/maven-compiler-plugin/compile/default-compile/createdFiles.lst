@@ -1,0 +1,4 @@
+com/aemtutorial/it/tests/CreatePageIT.class
+com/aemtutorial/it/tests/PublishPageValidationIT.class
+com/aemtutorial/it/tests/GetPageIT.class
+com/aemtutorial/it/tests/HtmlUnitClient.class

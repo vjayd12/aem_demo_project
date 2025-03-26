@@ -1,0 +1,36 @@
+{
+  "id":"com.aemtutorial:aemtutorial.all:slingosgifeature:author:1.0.0-SNAPSHOT",
+  "configurations":  {
+    "com.adobe.granite.cors.impl.CORSPolicyImpl~aemtutorial":    {
+      "alloworigin":[
+        "http://localhost:3000"
+      ],
+      "allowedpaths":[
+        "/(content|conf)/aemtutorial.*"
+      ],
+      "supportedheaders":[
+        "Authorization",
+        "Origin",
+        "Accept",
+        "X-Requested-With",
+        "Content-Type",
+        "Access-Control-Request-Method",
+        "Access-Control-Request-Headers"
+      ],
+      "supportedmethods":[
+        "GET",
+        "HEAD"
+      ],
+      "alloworiginregexp":[
+      ],
+      ":configurator:content-package-origins":"com.aemtutorial:aemtutorial.all:1.0.0-SNAPSHOT|com.aemtutorial:aemtutorial.ui.config:1.0.0-SNAPSHOT"
+    },
+    "com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider~aemtutorial":    {
+      "mobile.resourceTypes":[
+        "aemtutorial/components/page"
+      ],
+      "README":"Indicate which page resource types should display the mobile emulators.",
+      ":configurator:content-package-origins":"com.aemtutorial:aemtutorial.all:1.0.0-SNAPSHOT|com.aemtutorial:aemtutorial.ui.config:1.0.0-SNAPSHOT"
+    }
+  }
+}

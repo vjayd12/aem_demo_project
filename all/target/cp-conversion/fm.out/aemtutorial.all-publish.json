@@ -1,0 +1,12 @@
+{
+  "id":"com.aemtutorial:aemtutorial.all:slingosgifeature:publish:1.0.0-SNAPSHOT",
+  "configurations":  {
+    "org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl":    {
+      "resource.resolver.mapping":[
+        "/content/aemtutorial/</",
+        "/:/"
+      ],
+      ":configurator:content-package-origins":"com.aemtutorial:aemtutorial.all:1.0.0-SNAPSHOT|com.aemtutorial:aemtutorial.ui.config:1.0.0-SNAPSHOT"
+    }
+  }
+}

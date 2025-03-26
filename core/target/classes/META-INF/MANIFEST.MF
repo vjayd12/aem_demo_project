@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Bundle-Category: AEM Tutorial
+Bundle-Description: Core bundle for AEM Tutorial
+Bundle-ManifestVersion: 2
+Bundle-Name: AEM Tutorial - Core
+Bundle-SymbolicName: aemtutorial.core
+Bundle-Version: 1.0.0.SNAPSHOT
+Export-Package: com.aemtutorial.core.filters;version="1.0";uses:="java
+ x.servlet",com.aemtutorial.core.listeners;version="1.0";uses:="org.ap
+ ache.sling.api.resource.observation",com.aemtutorial.core.models;vers
+ ion="1.0";uses:="javax.annotation,org.apache.sling.api.resource,org.a
+ pache.sling.models.annotations,org.apache.sling.models.annotations.in
+ jectorspecific",com.aemtutorial.core.schedulers;version="1.0",com.aem
+ tutorial.core.servlets;version="1.0";uses:="javax.servlet,org.apache.
+ sling.api,org.apache.sling.api.servlets"
+Import-Package: javax.annotation;version="0.0.0",com.aemtutorial.core.
+ filters;version="[1.0,2)",com.aemtutorial.core.listeners;version="[1.
+ 0,2)",com.aemtutorial.core.schedulers;version="[1.0,2)",com.aemtutori
+ al.core.servlets;version="[1.0,2)",com.day.cq.wcm.api;version="[1.32,
+ 2)",javax.servlet;version="[4.0,5)",org.apache.sling.api;version="[2.
+ 3,3)",org.apache.sling.api.request;version="[2.7,3)",org.apache.sling
+ .api.resource;version="[2.13,3)",org.apache.sling.api.resource.observ
+ ation;version="[1.2,2)",org.apache.sling.api.servlets;version="[2.4,3
+ )",org.apache.sling.models.annotations;version="[1.5,2)",org.apache.s
+ ling.models.annotations.injectorspecific;version="[1.1,2)",org.slf4j;
+ version="[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
+ ervlet.Servlet";uses:="javax.servlet",osgi.service;objectClass:List<S
+ tring>="org.apache.sling.api.resource.observation.ResourceChangeListe
+ ner";uses:="org.apache.sling.api.resource.observation"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.5.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=11))"
+Service-Component: OSGI-INF/com.aemtutorial.core.filters.LoggingFilter
+ .xml,OSGI-INF/com.aemtutorial.core.listeners.SimpleResourceListener.x
+ ml,OSGI-INF/com.aemtutorial.core.schedulers.SimpleScheduledTask.xml,O
+ SGI-INF/com.aemtutorial.core.servlets.SimpleServlet.xml
+Sling-Model-Classes: com.aemtutorial.core.models.HelloWorldModel
+

@@ -1,0 +1,49 @@
+All the Data will be rendered dynamically with the help of Authoring capabilities of AEM.
+
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+    data-sly-call="${clientlib.css @ categories='aemtutorials.demo'}" />
+
+<!-- Single Card Rendering Single Field -->
+<h1>Example of Single Field</h1>
+    <div class="card">
+        <img src="${properties.image}" alt="Card Image">
+        <div class="card-content">
+            Name : <h3>${properties.title}</h3>
+            Number of Years on IT : <p>${properties.numbers}</p>
+            Career background : <p>${properties.description}</p>
+            Gender Type : <p>${properties.gendertype}</p>
+            Redirection Link : <a href="${properties.redirectlink}.html">Click Here</a>
+            <button id="btn">Click to change color</button>
+        </div>
+    </div>
+
+<!-- Multiple Card Rendering Multifield -->
+
+<h1>Example of Multifield</h1>
+
+<div class="multicard">
+<sly data-sly-list="${resource.children}">
+    <sly data-sly-test="${item.name=='sourcecardField'}">
+        <sly data-sly-list="${item.children}">
+            
+                <div class="card">
+                    <img src="${item.cardimage}" alt="Card Image">
+                    <div class="card-content">
+                        Name : <h3>${item.cardtitle}</h3>
+                        Number of Years on IT : <p>${item.cardnumbers}</p>
+                        Career background : <p>${item.carddescription}</p>
+                        Gender Type : <p>${item.cardgendertype}</p>
+                        Redirection Link : <a href="${item.cardredirectlink}.html">Click Here</a>
+                        <button id="btn" class="multicardclick">Click to change color</button>
+                    </div>
+                </div>
+    
+    
+           
+        </sly>
+    </sly>
+</sly>
+</div>
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+    data-sly-call="${clientlib.js @ categories='aemtutorials.demo'}" />

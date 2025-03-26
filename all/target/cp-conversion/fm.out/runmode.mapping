@@ -1,0 +1,5 @@
+#File edited by the Apache Sling Content Package to Sling Feature converter
+#Sat Mar 22 20:05:37 IST 2025
+author=aemtutorial.all-author.json
+publish=aemtutorial.all-publish.json
+(default)=aemtutorial.all.json

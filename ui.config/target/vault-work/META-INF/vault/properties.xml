@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>AEM Tutorial - UI config</comment>
+<entry key="cloudManagerTarget">none</entry>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="created">2025-03-22T14:35:34.955Z</entry>
+<entry key="groupId">com.aemtutorial</entry>
+<entry key="name">aemtutorial.ui.config</entry>
+<entry key="description">UI config package for AEM Tutorial</entry>
+<entry key="artifactId">aemtutorial.ui.config</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">container</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.aemtutorial</entry>
+</properties>
