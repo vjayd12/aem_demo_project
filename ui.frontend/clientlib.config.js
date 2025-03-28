@@ -88,6 +88,26 @@ module.exports = {
           ignore: ['**/*.js', '**/*.css']
         }
       }
-    }
+    },
+    {
+      ...libsBaseConfig,
+      name: 'clientlib-demouifrontend',
+      categories: ['aemtutorial.demouifrontend'],
+      assets: {
+        // Copy entrypoint scripts and stylesheets into the respective ClientLib
+        // directories
+        js: {
+          cwd: 'clientlib-demouifrontend',
+          files: ['**/*.js'],
+          flatten: false
+        },
+        css: {
+          cwd: 'clientlib-demouifrontend',
+          files: ['**/*.css'],
+          flatten: false
+        }
+      }
+    },
+  
   ]
 };

@@ -19,11 +19,12 @@ const resolve = {
 module.exports = {
     resolve: resolve,
     entry: {
-        site: SOURCE_ROOT + '/site/main.ts'
+        // site: SOURCE_ROOT + '/site/main.ts',
+        demouifrontend: SOURCE_ROOT + '/clientlibs/demouifrontend/main.ts',
     },
     output: {
         filename: (chunkData) => {
-            return chunkData.chunk.name === 'dependencies' ? 'clientlib-dependencies/[name].js' : 'clientlib-site/[name].js';
+            return `clientlib-${chunkData.chunk.name}/[name].js`;
         },
         path: path.resolve(__dirname, 'dist')
     },
@@ -80,7 +81,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new ESLintPlugin({
-            extensions: ['js', 'ts', 'tsx']
+            extensions: ['js', 'ts', 'tsx','scss']
         }),
         new MiniCssExtractPlugin({
             filename: 'clientlib-[name]/[name].css'
