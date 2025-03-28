@@ -1,0 +1,10 @@
+.btn > button {
+    background-color: yellow; /* Primary blue */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
