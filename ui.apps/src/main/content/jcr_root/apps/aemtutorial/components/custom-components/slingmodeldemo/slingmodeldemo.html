@@ -1,0 +1,30 @@
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+    data-sly-call="${clientlib.css @ categories='aemtutorials.slingmodeldemo'}" />
+<sly data-sly-use.model="com.aemtutorial.core.models.DemoSlingModel">
+    <div class="container">
+        <!-- Display Processed Data custom logic output -->
+        <p class="processed-data">${model.processedData}</p>
+
+        <!-- Single Field  -->
+        <h1>Authoring Title: ${model.title}</h1>
+        <p>Authoring Description: ${model.description}</p>
+
+        <!-- Multi Field  -->
+        <div class="multicard">
+
+            <sly data-sly-list="${model.sourcecardField}">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="${item.cardimage}" alt="Card Image">
+                        <p>Card Title: ${item.cardtitle}</p>
+                        <p>Card Description: ${item.carddescription}</p>
+                        <a href="${item.cardredirectlink}.html">Redirect Link </a>
+    
+                    </div>
+                </div>
+
+            </sly>
+        </div>
+    </div>
+</sly>
